@@ -1,6 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { FaCertificate, FaTimes } from "react-icons/fa";
+import htmlCertificate from "../assets/sertuficat_Html.jpg";
+import jsCertificate from "../assets/sertuficat_JS.png";
 
 const certificates = [
   {
@@ -8,14 +10,14 @@ const certificates = [
     issuer: "Online Course",
     year: "2022",
     description: "HTML5/CSS3/Bootstrap5",
-    image: "/src/assets/sertuficat_Html.jpg",
+    image: htmlCertificate,
   },
   {
     title: "Створення динамічних вебсайтів",
     issuer: "Online Course",
     year: "2023",
     description: "JavaScript / VueJS3",
-    image: "/src/assets/sertuficat_JS.png",
+    image: jsCertificate,
   },
 ];
 
