@@ -1,11 +1,28 @@
 import { motion } from "framer-motion";
 import { FaCode, FaUsers, FaBrain, FaRocket } from "react-icons/fa";
+import myPhoto2 from "../assets/MyPhoto_2.png";
 
 const qualities = [
-  { icon: FaCode, title: "Чистий код", text: "Пишу структурований та підтримуваний код" },
-  { icon: FaUsers, title: "Командна робота", text: "Вмію ефективно працювати в команді" },
-  { icon: FaBrain, title: "Швидке навчання", text: "Швидко освоюю нові технології" },
-  { icon: FaRocket, title: "Відповідальність", text: "Уважний до деталей та строків" },
+  {
+    icon: FaCode,
+    title: "Чистий код",
+    text: "Пишу структурований та підтримуваний код",
+  },
+  {
+    icon: FaUsers,
+    title: "Командна робота",
+    text: "Вмію ефективно працювати в команді",
+  },
+  {
+    icon: FaBrain,
+    title: "Швидке навчання",
+    text: "Швидко освоюю нові технології",
+  },
+  {
+    icon: FaRocket,
+    title: "Відповідальність",
+    text: "Уважний до деталей та строків",
+  },
 ];
 
 const About = () => {
@@ -33,7 +50,7 @@ const About = () => {
           >
             <div className="aspect-square rounded-3xl bg-gradient-to-br from-accent/20 to-accent-2/20 flex items-center justify-center overflow-hidden">
               <img
-                src="/src/assets/MyPhoto_2.png"
+                src={myPhoto2}
                 alt="Denys Kryvdiuk"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -51,17 +68,29 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-bold mb-4">
-              Привіт! Я{" "}
-              <span className="gradient-text">Денис Кривдюк</span>
+              Привіт! Я <span className="gradient-text">Денис Кривдюк</span>
             </h3>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Студент 3 курсу спеціальності <span className="text-accent">«Інженерія програмного забезпечення»</span> у Чернівецькому національному університеті ім. Ю. Федьковича.
+              Студент 3 курсу спеціальності{" "}
+              <span className="text-accent">
+                «Інженерія програмного забезпечення»
+              </span>{" "}
+              у Чернівецькому національному університеті ім. Ю. Федьковича.
             </p>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Мені подобається створювати сучасні вебдодатки та поступово розвиватися як Full Stack Developer. У своїх проєктах приділяю увагу <span className="text-accent">чистому коду, структурі застосунку та зручності користувача</span>.
+              Мені подобається створювати сучасні вебдодатки та поступово
+              розвиватися як Full Stack Developer. У своїх проєктах приділяю
+              увагу{" "}
+              <span className="text-accent">
+                чистому коду, структурі застосунку та зручності користувача
+              </span>
+              .
             </p>
             <p className="text-gray-400 leading-relaxed">
-              Постійно вивчаю нові технології (React, TypeScript, Vue) та люблю вирішувати нестандартні задачі. Моя мета — стати професійним Full Stack розробником, який створює продукти, що приносять реальну користь.
+              Постійно вивчаю нові технології (React, TypeScript, Vue) та люблю
+              вирішувати нестандартні задачі. Моя мета — стати професійним Full
+              Stack розробником, який створює продукти, що приносять реальну
+              користь.
             </p>
           </motion.div>
         </div>

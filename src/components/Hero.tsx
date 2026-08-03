@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaDownload } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import myPhoto1 from "../assets/MyPhoto_1.png";
 
 const Hero = () => {
   return (
@@ -58,7 +59,8 @@ const Hero = () => {
           >
             Software Engineering Student · ЧНУ ім. Ю. Федьковича.
             <br />
-            Створюю адаптивні веб-застосунки, пишу чистий код та постійно вивчаю нове.
+            Створюю адаптивні веб-застосунки, пишу чистий код та постійно вивчаю
+            нове.
           </motion.p>
 
           <motion.div
@@ -80,13 +82,6 @@ const Hero = () => {
             >
               <FaGithub /> GitHub
             </a>
-            <a
-              href="/Denys_Kryvdiuk_CV.pdf"
-              download
-              className="px-6 py-3 glass glass-hover rounded-lg font-medium flex items-center gap-2 transition-all"
-            >
-              <FaDownload /> CV
-            </a>
           </motion.div>
         </motion.div>
 
@@ -99,11 +94,11 @@ const Hero = () => {
           <div className="relative">
             {/* Анімоване світіння навколо фото */}
             <div className="absolute inset-0 bg-gradient-to-br from-accent to-accent-2 rounded-full blur-3xl opacity-30 animate-pulse" />
-            
+
             {/* Плейсхолдер для твого фото */}
             <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden glass border-2 border-accent/30">
               <img
-                src="/src/assets/MyPhoto_1.png"
+                src={myPhoto1}
                 alt="Denys Kryvdiuk"
                 className="w-full h-full object-cover"
                 onError={(e) => {
