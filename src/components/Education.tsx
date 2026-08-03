@@ -3,32 +3,44 @@ import { FaUniversity, FaGraduationCap, FaCode } from "react-icons/fa";
 
 const timeline = [
   {
-    year: "2024",
-    title: "Вступ до ЧНУ",
-    icon: FaUniversity,
-    description: "Початок навчання на спеціальності «Інженерія програмного забезпечення» у Чернівецькому національному університеті.",
-    color: "#4F8CFF",
-  },
-  {
     year: "2022",
     title: "Курс HTML/CSS/Bootstrap",
     icon: FaCode,
-    description: "Опанування основ верстки, адаптивного дизайну та створення простих вебсайтів.",
+    description:
+      "Перші кроки у верстці, адаптивному дизайні та створенні простих вебсайтів.",
     color: "#8B5CF6",
   },
   {
     year: "2023",
     title: "Курс JavaScript/Vue",
     icon: FaCode,
-    description: "Розвиток навичок створення динамічних вебсайтів, роботи з DOM, логікою та сучасними фреймворками.",
+    description:
+      "Зрозумів, як працює логіка вебсайтів, DOM та динамічні інтерфейси.",
     color: "#10B981",
   },
   {
-    year: "2024 — сьогодні",
+    year: "2024",
+    title: "Вступ до ЧНУ",
+    icon: FaUniversity,
+    description:
+      "Початок навчання на спеціальності «Інженерія програмного забезпечення» у Чернівецькому національному університеті.",
+    color: "#4F8CFF",
+  },
+  {
+    year: "2026 — сьогодні",
     title: "Розвиток як Full Stack Developer",
     icon: FaGraduationCap,
-    description: "Поглиблене вивчення React, TypeScript, Node.js та практичне створення власних проєктів.",
+    description:
+      "Поглиблюю знання у React, TypeScript, Node.js та створюю власні проєкти.",
     color: "#F59E0B",
+  },
+  {
+    year: "2028",
+    title: "Закінчення бакалавріату",
+    icon: FaGraduationCap,
+    description:
+      "Завершення навчання за освітньою програмою «Інженерія програмного забезпечення».",
+    color: "#EC4899",
   },
 ];
 
